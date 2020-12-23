@@ -1,0 +1,29 @@
+##
+## 本文件为besu区块链的配置信息文件
+##
+## 创建日期 2020-10-19
+## 创建人 袁振辉
+##
+
+# P2P配置信息
+p2p-enabled=true											# p2p是否启用
+
+# RPC HTTP配置信息
+rpc-http-api=["ETH","NET","WEB3","CLIQUE","ADMIN","DEBUG","EEA","PERM","PRIV","TRACE","TXPOOL"]		# rpc-http指定访问方式
+rpc-http-enabled=true											# rpc-http是否启用
+rpc-http-cors-origins=["all"]    									# 跨域配置all代表全通过
+
+# RPC Websocket配置信息
+rpc-ws-api=["ETH","NET","WEB3","CLIQUE","ADMIN","DEBUG","EEA","PERM","PRIV","TRACE","TXPOOL"]		# rpc-ws指定访问方式
+rpc-ws-enabled=true											# rpc-ws是否启用
+
+# OPTIONAL配置信息
+sync-mode="FULL"											# 数据同步模式
+data-path="/var/lib/besu/data"										# 内部挂载映射录路径
+max-peers=42												# p2p网络最大对等节点数
+logging="INFO"												# 设定日志输出等级（OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL）
+identity="yzh_besu"		      									# 跑合网节点名称
+min-gas-price=0												# 设置免费上链网络（通过设置min gas price为0，上链都不需要进行gas消费）
+network-id="65473"											# 网络唯一id
+host-allowlist=["*"]                									# 全主机访问
+nat-method="DOCKER"											# 网络访问模式DOCKER代表采用docker运行

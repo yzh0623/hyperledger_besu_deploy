@@ -1,0 +1,33 @@
+##
+## 本文件为区块签署者（eth_signer）的启动配置信息，对应脚本为：4.deploy_ethsigner.sh
+##
+## @Date：2020-11-25
+## @Author：yuanzhenhui
+##
+
+## 获取部署节点路径
+deploy_path=/home/yzh/Documents/docker/ethsigner
+
+## ethsigner用户密码js文件路径
+createkey_path=/home/yzh/Documents/besu/ethsigner_conf/createKeyfile.js
+
+## docker镜像名称
+docker_image=consensys/quorum-ethsigner:20.10.0
+
+## signer密码数组
+signer_pwds=master@2020 slave@2020
+
+## 区块链的链id（可以在创世块配置文件中获取）
+chain_id=76387
+
+## 节点服务名称
+custom_name=a_signer
+
+## 固定ip地址
+ethsigner_ip=192.18.0.6
+
+## 签署节点具体ip地址
+signer_node_ip=192.18.0.5
+
+## 是否存在用户信息
+has_users=/home/yzh/Documents/besu/ethsigner_conf/users

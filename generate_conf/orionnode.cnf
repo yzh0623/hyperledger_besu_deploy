@@ -1,0 +1,21 @@
+##
+## 本文件为猎户座节点（orion）启动配置内容，对应脚本为: 1.deploy_orion.sh
+##
+## @Date：2020-11-12
+## @Author：yuanzhenhui
+##
+
+## 部署地址
+deploy_path=/home/yzh/Documents/docker/orion
+
+## 配置文件路径
+source_conf=/home/yzh/Documents/besu/orion_node
+
+## 镜像名称
+docker_image=consensys/quorum-orion:20.10.0
+
+## 权限密码
+passwords=yzh20201223 yzh20201224 yzh20201225
+
+## 静态ip地址
+static_ip=192.18.0.253

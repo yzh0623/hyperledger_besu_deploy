@@ -1,0 +1,30 @@
+##
+## 本文件为签署节点（signnode）的启动配置信息，对应脚本为：3.deploy_signernode.sh
+##
+## @Date：2020-10-19
+## @Author：yuanzhenhui
+##
+
+## 自定义签署节点名称
+custom_folder=A_SIGN_NODE
+
+## 签署节点部署路径
+deploy_path=/home/yzh/Documents/docker/besu/Clique
+
+## clique节点配置文件路径
+clique_config_file=node_conf/a_boot_node_clique_config.toml
+
+## 创世块文件路径
+genesis_config_file=genesis_conf/a_boot_node_clique_genesis.json
+
+## 签署节点ip地址
+signer_ip=192.18.0.5
+
+## docker镜像名称
+docker_image=hyperledger/besu:20.10.0-RC2-openjdk-latest
+
+## 猎户座客户端访问地址
+orion_client=http://192.18.0.253:8888
+
+## orion部署目录
+orion_folder=/home/yzh/Documents/besu/orion_node/keySub

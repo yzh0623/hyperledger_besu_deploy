@@ -1,0 +1,24 @@
+##
+## 本文件为引导节点（bootnode）的启动配置信息，对应脚本为：2.deploy_bootnode_ha.sh
+##
+## @Date：2020-10-19
+## @Author：yuanzhenhui
+##
+
+## 引导节点名称
+custom_folder=A_BOOT_NODE
+
+## clique节点安装路径
+deploy_path=/home/yzh/Documents/docker/besu/Clique
+
+## clique共识算法节点配置文件路径
+clique_config_file=node_conf/clique_config.toml
+
+## 创世块文件路径
+genesis_config_file=genesis_conf/clique_genesis.json
+
+## 节点名称(自定义ip地址使用空格将两个ip分隔)
+ip_arr=192.18.0.2 192.18.0.3 192.18.0.4
+
+## docker镜像名称
+docker_image=hyperledger/besu:20.10.0-RC2-openjdk-latest
